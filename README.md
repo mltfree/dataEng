@@ -12,7 +12,22 @@ ___
 
 
 #### Eg. Setting up a window to a staging env.  
-> 	create or replace stage like_a_window_into_an_s3_bucket url = 's3://uni-lab-files'
-> 	list @LIKE_A_WINDOW_INTO_AN_S3_BUCKET/this_;
+> create or replace stage like_a_window_into_an_s3_bucket url = 's3://uni-lab-files'
+> list @LIKE_A_WINDOW_INTO_AN_S3_BUCKET/this_;
 
+#### Eg. loading data from a staging env
+> copy into vegetable_details_soil_type
+> from @like_a_window_into_an_s3_bucket
+> files = ( 'VEG_NAME_TO_SOIL_TYPE_PIPE.txt')
+> file_format = ( format_name=PIPECOLSEP_ONEHEADROW );
 
+#### Eg. Creating a file format for laoding data
+> CREATE OR REPLACE FILE FORMAT LIBRARY_CARD_CATALOG.PUBLIC.XML_FILE_FORMAT 
+> TYPE = 'XML' 
+> COMPRESSION = 'AUTO' 
+> PRESERVE_SPACE = FALSE 
+> STRIP_OUTER_ELEMENT = TRUE 
+> DISABLE_SNOWFLAKE_DATA = FALSE 
+> DISABLE_AUTO_CONVERT = FALSE 
+> IGNORE_UTF8_ERRORS = FALSE; 
+  
