@@ -1,9 +1,9 @@
 # Documenting my data eng learnings
 ___
 ### Snowflake Learnings 
-> https://www.snowflake.com/en
-> https://learn.snowflake.com/courses/course-v1:snowflake+ESS_DWW_101+2021/about
-> Certification: https://www.credly.com/badges/535d8474-ebe0-40c7-8855-4ee8c62c43ac/public_url
+> 1) https://www.snowflake.com/en
+> 2) https://learn.snowflake.com/courses/course-v1:snowflake+ESS_DWW_101+2021/about
+> 3) Certification: https://www.credly.com/badges/535d8474-ebe0-40c7-8855-4ee8c62c43ac/public_url
 
 #### Key functions of snowflake
 > 1) Snowflake provides an easy way to manage your org's data
