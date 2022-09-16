@@ -12,8 +12,8 @@ ___
 
 
 #### Eg. Setting up a window to a staging env.  
-> create or replace stage like_a_window_into_an_s3_bucket url = 's3://uni-lab-files'
-> list @LIKE_A_WINDOW_INTO_AN_S3_BUCKET/this_;
+	create or replace stage like_a_window_into_an_s3_bucket url = 's3://uni-lab-files'
+	list @LIKE_A_WINDOW_INTO_AN_S3_BUCKET/this_;
 
 #### Eg. loading data from a staging env
 > copy into vegetable_details_soil_type
