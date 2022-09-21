@@ -43,4 +43,4 @@ ___
 
 #### Eg. DAG that outputs a certain action based on some conditions 
 > 1) Based on https://www.youtube.com/watch?v=IH1-0hwFZRQ
-> 2) 
+> 2) ![Airflow dag](/assets/imgs/airflow_DAG1.png "airflow_DAG1") 
